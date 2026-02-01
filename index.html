@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cloud Service Management</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(90deg, #007bff, #00c6ff);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        .active {
+            background: #28a745;
+            color: white;
+        }
+
+        .inactive {
+            background: #dc3545;
+            color: white;
+        }
+
+        button {
+            padding: 8px 15px;
+            border: none;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #222;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>☁️ Cloud Service Management Dashboard</h1>
+    <p>Monitor and manage cloud services</p>
+</header>
+
+<section class="dashboard">
+
+    <div class="card">
+        <h2>🖥️ Compute Service</h2>
+        <p>Virtual machines and servers</p>
+        <span class="status active">Running</span><br><br>
+        <button>Manage</button>
+    </div>
+
+    <div class="card">
+        <h2>💾 Storage Service</h2>
+        <p>Cloud storage and backups</p>
+        <span class="status active">Active</span><br><br>
+        <button>Manage</button>
+    </div>
+
+    <div class="card">
+        <h2>🗄️ Database Service</h2>
+        <p>SQL and NoSQL databases</p>
+        <span class="status inactive">Stopped</span><br><br>
+        <button>Start</button>
+    </div>
+
+    <div class="card">
+        <h2>🔐 Security Service</h2>
+        <p>IAM and firewall protection</p>
+        <span class="status active">Protected</span><br><br>
+        <button>View</button>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Cloud Service Management System</p>
+</footer>
+
+</body>
+</html>
